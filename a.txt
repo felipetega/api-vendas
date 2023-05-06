@@ -1,0 +1,29 @@
+npm init -y
+
+npm install typescript ts-node-dev @types/node tsconfig-paths -D
+
+tsc --init --rootDir src --outDir build \ --esModuleInterop --resolveJsonModule --lib es6 \ --module commonjs --allowJs true --noImplicitAny true
+
+tsc //att o src -> build
+
+node build/server.js
+
+.editorconfig
+
+npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+npm install --global yarn
+
+yarn lint
+
+yarn add prettier -D
+
+yarn add eslint-config-prettier@6.15.0 eslint-plugin-prettier@3.2.0 -D
+Desativa as regras ESLint q interferem prettier //Transforma regras prettier em ESLint
+
+services?, src/
+config,modules,shared/http/server.ts
+tsconfig.json->paths
+yarn add express cors express-async-errors
+
+yarn add -D @types/express @types/cors
